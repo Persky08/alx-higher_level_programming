@@ -9,4 +9,4 @@ def read_file(filename=""):
     A function that reads file and prints to stdout
     """
     with open(filename, mode='r', encoding='utf-8') as file:
-        print(file.read())
+        print(file.read(), end="")

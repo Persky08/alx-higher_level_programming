@@ -20,4 +20,4 @@ if __name__ == "__main__":
     # Add new file to old list to create a new list
     new_list = old_list + new_file
     # save file to add_item.json
-    save_to_json_file(new_list, "add_item.json"
+    save_to_json_file(new_list, "add_item.json")

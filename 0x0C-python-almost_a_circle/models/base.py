@@ -5,6 +5,7 @@ defines a class called base
 import json
 import csv
 
+
 class Base:
     """
     creating a class called base
@@ -34,7 +35,6 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
 
-    
     @staticmethod
     def save_to_file(cls, list_objs):
         """
@@ -50,6 +50,8 @@ class Base:
             list_objs = []
 
         filename = cls.__name__ + ".json"
-        json_string = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
+        json_string = cls.to_json_string(
+                    [obj.to_dictionary() for obj in list_objs]
+                    )
         with open(filename, mode="w", encoding="utf-s") as file:
             file.write(json_string)

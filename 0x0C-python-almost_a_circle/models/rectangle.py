@@ -105,7 +105,7 @@ class Rectangle(Base):
         provides a meaningful and readable string representation
         """
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - " \
-                f"{self.width}/{self.height}"
+               f"{self.width}/{self.height}"
 
     def check_integer(self, attribute_name, value):
         """

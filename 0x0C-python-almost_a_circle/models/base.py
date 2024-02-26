@@ -12,6 +12,9 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """
+        initializing the class
+        """
         self.id = id
 
         if id is not None:
@@ -31,6 +34,8 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
 
+    
+    @staticmethod
     def save_to_file(cls, list_objs):
         """
         Json string representation of a list to a file

@@ -5,3 +5,6 @@ a project to create an empty class
 
 '''
 class Square:
+    '''
+    square class
+    '''

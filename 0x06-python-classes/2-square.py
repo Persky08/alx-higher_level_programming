@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-""" a function that defines a square """
+"""a program that defines a square class."""
 
 
 class Square:
-    """ a class that defines a square"""
-    def __int__(self, size=0):
-        '''
-        initializing a new square
-        Args:
-            size: the size of the square
-        '''
+    """Square class body"""
 
+    def __init__(self, size=0):
+        """Square class contructor
+        Args:
+            size: The size of the new square.
+        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
